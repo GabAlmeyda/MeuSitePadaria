@@ -61,7 +61,7 @@ main {
     max-width: 1200px;
     margin: 0 auto 10px;
     border-radius: 0 0 15px 15px;
-    padding: 0 15px 15px;
+    padding: 0 15px 0 15px;
     background-color: var(--main-color);
 }
 
@@ -71,33 +71,71 @@ main strong {
     background-color: var(--lighter-highlight-color);
 }
 
-main section {
+main section .back-img{
     margin-bottom: 30px;
 }
 
-main .parallax {
-    height: 80vh;
+main .back-img {
+    height: 85vh;
     margin: 0 -15px;
-    background: darkgray url("/image/padaria.jpg") no-repeat scroll center / cover;
 }
 
-main .parallax-text {
-    width: 60vw;
+main #banner01.back-img {
+    background: darkgray url("/image/banner01.jpg") no-repeat scroll center / cover;
+}
+
+main #banner02.back-img {
+    border-radius: 0 0 15px 15px;
+    background: brown url("/image/banner02.png") no-repeat scroll center / cover;
+    margin-bottom: 0;
+}
+
+main .back-img-text {
+    width: 70vw;
     padding: 20px;
     margin: auto;
     border-radius: 0 0 15px 15px;
     background-color: rgba(0, 0, 0, 0.863);
     font-family: var(--alt-font);
     color: white;
+    line-height: 2em;
 }
 
-main .parallax-text h1 {
-    font-size: 3em;
+main #banner02 .back-img-text {
+    width: calc(100% - 40px);
+    height: 100%;
+    padding: 0 20px;
+    text-align: center;
 }
 
-main .parallax-text h1, .parallax-text h2 {
+main .back-img-text h1, .back-img-text h2 {
     margin: 10px 0;
     font-variant: small-caps;
+}
+
+main .back-img-text h1 {
+    margin-bottom: 10px;
+    font-size: 3em;
+    line-height: 0.9em;
+}
+
+main .back-img-text h2{
+    margin-bottom: 30px;
+}
+
+main #banner02 .back-img-text h1 {
+    padding: 30px;
+    font-size: 4em;
+}
+
+main #banner02 .back-img-text h2 {
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+main #banner02 .back-img-text h3{
+    margin-top: 60px;
+    font-size: 3.5em;
 }
 
 main .normal {
@@ -116,7 +154,7 @@ main .normal p {
 }
 
 main .normal ul {
-    margin: -15px;
+    margin:  0 -15px 40px;
     padding: 15px 0 15px 65px;
     background-color: var(--highlight-color);
 }
@@ -148,7 +186,7 @@ main .normal ul li#third-item::before {
 main .normal ul li#fourth-item::before {
     content: "💞 ";
 }
-
+/* End */
 
 
 footer {
