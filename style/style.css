@@ -81,12 +81,12 @@ main .back-img {
 }
 
 main #banner01.back-img {
-    background: darkgray url("/image/banner01.jpg") no-repeat scroll center / cover;
+    background: darkgray url("../image/banner01.jpg") no-repeat scroll center / cover;
 }
 
 main #banner02.back-img {
     border-radius: 0 0 15px 15px;
-    background: brown url("/image/banner02.png") no-repeat scroll center / cover;
+    background: brown url("../image/banner02.png") no-repeat scroll center / cover;
     margin-bottom: 0;
 }
 
