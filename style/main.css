@@ -1,0 +1,153 @@
+@import url("./base.css");
+
+main {
+    width: 100%;
+    max-width: 83vw;
+
+    margin: 0 auto 10px;
+    border-radius: 0 0 15px 15px;
+    padding: 0 15px;
+
+    background-color: var(--main-color);
+}
+
+main h1 {
+    padding: 35px 0 15px;
+}
+
+main p {
+    margin-left: 25px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+
+    font-size: 1.3em;
+    line-height: 1.7em;
+}
+
+main strong {
+    border-radius: 10px;
+    padding: 0 7px;
+
+    background-color: var(--lighter-highlight-color);
+}
+
+main .back-img {
+    min-height: 85vh;
+    min-width: 100%;
+
+    margin: 0 -15px;
+    margin-bottom: 30px;
+}
+
+main #banner01.back-img {
+    background: darkgray url("../image/banner01.jpg") no-repeat scroll center / cover;
+}
+
+main #banner02.back-img {
+    border-radius: 0 0 15px 15px;
+    margin-bottom: 0;
+
+    background: brown url("../image/banner02.png") no-repeat scroll center / cover;
+}
+
+main .back-img-text {
+    width: 70vw;
+
+    padding: 20px;
+    margin: auto;
+    border-radius: 0 0 15px 15px;
+
+    background-color: rgba(0, 0, 0, 0.863);
+
+    font-family: var(--alt-font);
+    color: white;
+    line-height: 2em;
+}
+
+main #banner02 .back-img-text {
+    width: calc(100% - 40px);
+    min-height: 85vh;
+
+    padding: 0 20px;
+
+    text-align: center;
+}
+
+main .back-img-text h1, .back-img-text h2 {
+    margin: 10px 0;
+
+    font-variant: small-caps;
+}
+
+main .back-img-text h1 {
+    margin-bottom: 10px;
+
+    font-size: 3em;
+    line-height: 0.9em;
+}
+
+main .back-img-text h2{
+    margin-bottom: 30px;
+}
+
+main #banner02 .back-img-text h1 {
+    padding: 30px;
+
+    font-size: 4em;
+}
+
+main #banner02 .back-img-text h2 {
+    font-size: 2em;
+    line-height: 1.3em;
+}
+
+main #banner02 .back-img-text h3{
+    margin-top: 60px;
+
+    font-size: 3.5em;
+    line-height: 1.3em;
+}
+
+main .normal h2 {
+    margin-bottom: 20px;
+
+    font-size: 2.2em;
+}
+
+main #ul-list {
+    margin:  0 -15px 40px;
+    padding: 15px 0 15px 65px;
+
+    background-color: var(--highlight-color);
+}
+
+main #ul-list li {
+    margin-bottom: 10px;
+
+    color: white;
+    list-style-type: none;
+    font-style: italic;
+    font-size: 1.3em;
+}
+
+main #ul-list li::before {
+    font-style: normal;
+}
+
+/* Changes de list-style-type for each item*/
+main #ul-list li#first-item::before {
+    content: "☑️ ";
+}
+
+main #ul-list li#second-item::before {
+    content: "🧁 ";
+}
+
+main #ul-list li#third-item::before {
+    content: "📸 ";
+}
+
+main #ul-list li#fourth-item::before {
+    content: "💞 ";
+}
+/* End */

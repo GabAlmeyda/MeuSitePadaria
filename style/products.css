@@ -1,0 +1,66 @@
+@import url("base.css");
+@import url("main.css");
+
+main {
+    padding-bottom: 20px;
+}
+
+main #product-layout {
+    min-width: 80vw;
+
+    padding: 7px;
+    border-radius: 10px;
+
+    background-color: gray;
+}
+
+main #product-layout > h1 {
+    margin-left: 2vw;
+}
+
+main .product-layout-row {
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 10px;
+}
+
+main .product-layout-item {
+    display: flex;
+    flex-direction: column;
+
+    width: 23vw;
+    height: 60vh;
+
+    padding: 10px;
+    border-radius: 10px;
+
+    background-color: var(--lighter-highlight-color);
+
+    color: white;
+}
+
+main .product-image {
+    overflow: hidden;
+
+    width: 100%;
+    height: 50%;
+
+    border-radius: 10px;
+}
+
+main .product-image img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+main .product-layout-item h2 {
+    margin: 10px 0 30px;
+
+    font-size: 2em;
+    font-weight: 500;
+}
+
+main .product-layout-item h3 {
+    font-weight: 500;
+}

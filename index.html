@@ -5,13 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NOME DA EMPRESA</title>
 
-    <link rel="stylesheet" href="/MeuSitePadaria/style/style.css">
+    <link rel="stylesheet" href="/style/header.css">
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="/style/footer.css">
 
     <script src="/MeuSitePadaria/js/main.js" defer></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+        intent="WELCOME"
+        chat-title="PadariaSite"
+        agent-id="6134c305-450c-4c5e-8758-afad2eb62494"
+        language-code="pt-br"
+    ></df-messenger>
 
 </head>
 <body>
-    <!-- Start of the header -->
+    <!-- Header: contains the company name and navigation menu -->
     <header>
         <h1>NOME DA EMPRESA</h1>
         <nav>
@@ -22,10 +31,11 @@
             </ul>
         </nav>
     </header>
-    <!-- End of the header  -->
 
-    <!-- Start of the main content  -->
+    <!-- Main content: company description and motivation  -->
     <main>
+
+        <!-- Company introduction -->
         <section>
             <div id="banner01" class="back-img">
                 <div class="back-img-text">
@@ -36,11 +46,12 @@
             </div>
         </section>
 
+        <!-- About us section  -->
         <section>
             <div class="normal">
                 <h2>Quem somos?</h2>
                 <p>Somos uma equipe formada por profissionais que destinam todos os dias a fazerem nossos clientes terem a melhor experiência de suas vidas. Nosso estabelecimento se encontra em frente ao mar, visando uma ótima paisagem enquanto servimos com protidão todas as pessoas que são atendidas por nós!</p>
-                <p>Não somos apenas uma padaria, somos um lugar onde a família pode ser juntar para apreciar o momento, com nosso amplo cardápio cheio de opções, que vão desde dos mais simples pães até as mais bem-feitas refeições. Estamos todos os dias inovando para trazer sempre as melhores opções para nossos clientes, e ficamos felizes em dizer que somos um dos mais notáveis pontos turísticos de Recife. As experiências que transmitimos aos clientes se espalham de pessoa por pessoa, e todas elas agradecem o modo como a tratamos.</p>
+                <p>Não somos apenas uma padaria, somos um lugar onde a família pode ser juntar para apreciar o momento, com nosso amplo cardápio cheio de opções, que vão desde dos mais simples pães até as mais bem-feitas refeições. Estamos todos os dias inovando para trazer sempre as melhores opções para nossos clientes, e ficamos felizes em dizer que somos um dos mais notáveis pontos turísticos de Recife.</p>
                 <p>Dentre as mais diversas coisas que somos elogiados, aqui estão as mais recorrentes:</p>
                 <ul id="ul-list">
                     <li id="first-item">Ótimo atendimento</li>
@@ -51,6 +62,7 @@
             </div>
         </section>
 
+        <!-- Delivery number section -->
         <section>
             <div id="banner02" class="back-img">
                 <div class="back-img-text">
@@ -62,12 +74,10 @@
         </section>
         
     </main>
-    <!-- End of the main content  -->
 
-    <!-- Start of the footer  -->
+    <!-- Footer: company copyright information  -->
     <footer>
         <p><small>© 2024 NOME DA EMPRESA - Todos os direitos reservados</small></p>
     </footer>
-    <!-- End of the footer  -->
 </body>
 </html>
