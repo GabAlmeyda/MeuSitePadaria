@@ -2,7 +2,9 @@
 
 footer {
     padding: 5px;
+
     background-color: rgb(112, 64, 0);
+
     font-family: var(--alt-font);
     color: white;
     text-align: center;

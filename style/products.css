@@ -1,5 +1,5 @@
 @import url("base.css");
-@import url("main.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 main {
     padding-bottom: 20px;
@@ -15,7 +15,12 @@ main #product-layout {
 }
 
 main #product-layout > h1 {
-    margin-left: 2vw;
+    margin-left: 2.5vw;
+    padding-bottom: 0;
+
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 2.5em;
 }
 
 main .product-layout-row {
@@ -29,8 +34,8 @@ main .product-layout-item {
     display: flex;
     flex-direction: column;
 
-    width: 23vw;
-    height: 60vh;
+    width: 20vw;
+    height: 55vh;
 
     padding: 10px;
     border-radius: 10px;
@@ -57,8 +62,9 @@ main .product-image img{
 main .product-layout-item h2 {
     margin: 10px 0 30px;
 
-    font-size: 2em;
+    font-family: "Poppins";
     font-weight: 500;
+    font-size: 2em;
 }
 
 main .product-layout-item h3 {
