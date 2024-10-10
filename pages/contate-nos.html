@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="../style/header.css">
     <link rel="stylesheet" href="../style/main.css">
     <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/contato.css">
 
 </head>
 <body>
-    <!-- Start of the header -->
+    <!-- Header: contains the company name and navigation menu -->
     <header>
         <h1>NOME DA EMPRESA</h1>
         <nav>
@@ -22,18 +23,61 @@
             </ul>
         </nav>
     </header>
-    <!-- End of the header  -->
 
-    <!-- Start of the main content  -->
+    <!-- Main content: form content  -->
     <main>
-        
-    </main>
-    <!-- End of the main content  -->
+        <div id="top">
+            <h1>Entre em contato conosco!</h1>
+            <p>Adoraríamos saber a sua opinião sobre nossos produtos, então, <strong>o que está esperando? Fale conosco pelo formulário abaixo!</strong></p>
+        </div>
 
-    <!-- Start of the footer  -->
+        <section id="form">
+            <p>* representa um campo obrigatório.</p>
+            <form action="cadastro.php" method="POST" autocomplete="on">
+                <fieldset id="nome">
+                    <p id="p-name" class="required-inp">
+                        <label for="iname">Nome:</label>
+                        <input type="text" id="iname" name="name" required autocomplete="name">
+                    </p>
+                    
+                    <p id="p-surname">
+                        <label for="isurname">Sobrenome:</label>
+                        <input type="text" id="isurname" name="surname" autocomplete="name">
+                    </p>
+                </fieldset>
+               
+                
+                <p class="required-inp">
+                    <label for="iemail">Email:</label>
+                    <input type="email" id="iemail" name="email" required autocomplete="email">
+                </p>
+
+                <p class="required-inp">
+                    <label for="idescription">Fale sua opinião:</label>
+                    <textarea name="description" id="idescription" required></textarea>
+                </p>
+
+                <p>
+                    <label for="irange">Avalie rapidamente nossos serviços:</label>
+                    <p id="p-range">Como foi sua experiência?</p>
+                    <div  id="range-input">
+                        <output id="outrange">5</output>
+                        <input type="range" id="irange" name="range" min="0" max="10" value="5" oninput="outrange.innerHTML = Number(irange.value);">
+                    </div>
+                </p>
+
+                <p id="buttons">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer: company copyright information  -->
     <footer>
         <p><small>© 2024 NOME DA EMPRESA - Todos os direitos reservados</small></p>
     </footer>
-    <!-- End of the footer  -->
 </body>
 </html>
